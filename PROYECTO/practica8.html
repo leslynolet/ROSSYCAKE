@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIO</title>
+</head>
+<body bgcolor="c7bbf3" >
+    <form action="mailto:nolet.martinez.lesly.p01@gmail.com">
+<fieldset>
+<legend>Informacion General</legend>
+<label for="">Nombre:</label>
+<input placeholder="Ej: Lesly Michel" type="text" required>
+<label style="margin-left: 80px;" for="">Apellidos:</label>
+<input placeholder="Ej: Nolet Martinez" type="text">
+<label style="margin-left: 80px;" for="">Correo Electrónico:</label>
+<input placeholder="Ej: lesly.nolet27@gmail.com " type="email">
+<br><br>
+<label for="">Fecha de Nacimiento:</label>
+<input type="date">
+<br><br>
+<label for="">Usuario:</label>
+<input type="text">
+<label style="margin-left: 80px;" for="">Contraseña</label>
+<input  type="password" id="password">
+<input type="checkbox" id="show-pass" onchange="oncheck(this)"> 
+<label for="show-pass" id="label-show">Mostrar Contraseña</label>
+<script>
+    function oncheck(e){ 
+    var inputpassword = document.getElementById("password");
+    var labelpass = document.getElementById("label-show");
+    
+    inputpassword.type = e.checked ? "text" : "password"
+   labelpass.textContent = e.checked ? "Ocultar Contraseña" : "Mostrar Contraseña";
+        }
+</script>
+<!--
+</fieldset>
+<fieldset>
+<legend>Encuesta Rapida</legend>
+<p>¿Qué sistema operativo saber usar?</p>
+<input type="checkbox">
+<label for="">Windows</label>
+<input style="margin-left: 30px;" type="checkbox">
+<label for="">Mac Os</label>
+<input style="margin-left: 30px;" type="checkbox">
+<label for="">Linux</label>
+<p>¿Cuál sistema operativo prefieres?</p>
+<input name="sist" type="radio">
+<label for="">Windows</label>
+<input style="margin-left: 30px;" name="sist" type="radio">
+<label for="">Mac Os</label>
+<input style="margin-left: 30px;" name="sist" type="radio">
+<label for="">Linux</label>
+<p>¿Cuál sistema operativo te gusta menos?</p>
+<select name="" id="">
+    <option value="0">Windows</option>
+    <option value="1">Mac Os</option>
+    <option value="2">Linux</option>
+    <option value="3">Otros</option>
+</select>
+</fieldset>
+-->
+<br>
+<input style="margin-top: 10px;cursor: pointer;background-color: rgb(30, 139, 35);color: white;" type="submit">
+    </form>
+</body>
+</html>

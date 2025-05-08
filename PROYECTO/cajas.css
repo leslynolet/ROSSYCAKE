@@ -1,0 +1,27 @@
+.Contenedor{
+    width: 1230px;
+    height: 400px;
+    border: 6px solid rgb(45, 5, 155);
+    background-color: rgb(130, 88, 243);
+    border-radius: 20px;
+    margin-left: 50px;
+    display: flex;
+}
+.hijo1{
+    width: 230px;
+    height: 230px;
+    border: 4px solid rgb(23, 4, 73);
+    background-color: rgb(84, 29, 236);
+    margin-left: 50px;
+    margin-top: 70px;
+    border-radius: 20px;
+}
+.hijo2{
+    width: 230px;
+    height: 230px;
+    border: 4px solid rgb(84, 4, 73);
+    background-color: rgb(161, 62, 148);
+    margin-left: 50px;
+    margin-top: 70px;
+    border-radius: 20px;
+}

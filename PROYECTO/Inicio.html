@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abre secion</title>
+</head>
+<body bgcolor="3cf3f3">
+    <h1 style="font-size: 70px; color: rgb(20, 139, 236); text-align: center;margin-top: 70px;margin-bottom: 0px;">Peliculas Gratis</h1>
+    <br><br>
+    <input style="margin-left: 550px;" type="text">
+    <label for="">Usuario</label>
+    <br><br>
+    <input style="margin-left: 550px;" type="password" id="password">
+    <label for="">Contraseña</label>
+    <br><br>
+<input style="margin-left: 550px;" type="checkbox" id="show-pass" onchange="oncheck(this)"> 
+<label for="show-pass" id="label-show">Mostrar Contraseña</label>
+<script>
+    function oncheck(e){ 
+    var inputpassword = document.getElementById("password");
+    var labelpass = document.getElementById("label-show");
+    
+    inputpassword.type = e.checked ? "text" : "password"
+   labelpass.textContent = e.checked ? "Ocultar Contraseña" : "Mostrar Contraseña";
+        }
+</script>
+<br><br>
+<a style="margin-left: 550px;color: rgb(21, 52, 110);font-size: 18px;" href="recuperacion.html">¿Olvidaste tu contraseña?</a>
+<br><br>
+<button style="margin-left: 550px;">Ingresar</button>   <button>Registrate</button>   <label for="">¿Eres usuario nuevo?, <a style="color: rgb(21, 52, 110); font-size: 18px;" href="practica8.html">Registrate</a> </label>
+</body>
+</html>
